@@ -1,0 +1,312 @@
+/* 0. Breakpoints ==================================== */
+/* 1. Colors ========================================= */
+/* 2. Fonts  ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+=====================================================
+Project:	
+Developer:		Michelle Graham akak @webDevShelly
+=====================================================
+*/
+/* 0. Reset ========================================= */
+/* 1. Main Layout =================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #94552c;
+  color: #fffcf7;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 2. Content ====================================== */
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-image: url("/src/img/cove.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+@media screen and (min-width: 576px) {
+  header {
+    height: 400px;
+  }
+}
+header h2 {
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+  max-width: 992px;
+  padding: 10px;
+  margin: 0 auto;
+}
+main .gallery-title {
+  margin: 3rem 0;
+}
+main .gallery-title h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+main .gallery-title h3 {
+  line-height: 1.5rem;
+  color: #70dbe1;
+}
+main .gallery-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .gallery-description > p {
+  line-height: 1.5rem;
+  flex-basis: 100%;
+  margin: 1rem 0;
+  padding: 0 1.5rem 0 0;
+}
+@media screen and (min-width: 992px) {
+  main .gallery-description > p {
+    flex-basis: 50%;
+  }
+}
+main .gallery-description > p a {
+  color: #70dbe1;
+}
+main .gallery-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .gallery-image-grid figure {
+  position: relative;
+  flex-basis: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  main .gallery-image-grid figure {
+    flex-basis: 50%;
+  }
+  main .gallery-image-grid figure:nth-child(2n-1) {
+    flex-basis: calc(50% - 5px);
+    margin-right: 5px;
+  }
+}
+main .gallery-image-grid figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+main .gallery-image-grid figure figcaption {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  color: #fffcf7;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  -ms-transform: translateY(100%);
+      transform: translateY(100%);
+}
+main .gallery-image-grid figure:hover figcaption {
+  -ms-transform: translateY(0);
+      transform: translateY(0);
+}
+main .gallery-image-grid figure:hover img {
+  -ms-transform: scale(1.2);
+      transform: scale(1.2);
+}
+main .comments {
+  margin: 3rem 0;
+}
+main .comments h4 {
+  padding: 5px 0px;
+}
+main .comments .comment {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+main .comments .comment img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  background: #70dbe1;
+  color: #94552c;
+}
+footer nav {
+  display: flex;
+}
+footer nav .social {
+  margin-right: 1rem;
+}
+footer nav a {
+  text-decoration: none;
+}
+footer nav a img {
+  width: 25px;
+  height: auto;
+  margin-right: 0.3rem;
+}
+
+.media, main .comments .comment, footer nav .social {
+  display: flex;
+  align-items: center;
+}
+.media .media-figure, main .comments .comment .media-figure, footer nav .social .media-figure {
+  margin-right: 1em;
+}
+.media .media-content, main .comments .comment .media-content, footer nav .social .media-content {
+  flex: 1;
+}
+/*# sourceMappingURL=main.css.map */
