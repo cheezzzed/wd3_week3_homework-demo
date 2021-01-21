@@ -1,4 +1,4 @@
-# **Web Dev 3 - Week 3* - *Image Optimization Homework*
+# **Web Dev 3 - Week 3** - *Image Optimization Homework*
 
 1. Optimize the included site to have a total load weight below 700KB.
 
