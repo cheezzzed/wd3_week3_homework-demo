@@ -6,7 +6,7 @@
 
 3. Switch out social media icons with FontAwesome Icons.
 
-4. Bonus point if you are able to lazy-load one background-image and are able to get page load under 500KB.
+4. Bonus points if you are able to lazy-load one background-image and are able to get page load under 500KB.
 
 5. Feel free to change up the design and make it more you.
 
