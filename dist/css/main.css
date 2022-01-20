@@ -162,7 +162,7 @@ header {
   width: 100%;
   height: 200px;
   padding: 20px;
-  background-image: url("/src/img/cove.jpg");
+  background-image: url("../../src/img/cove.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -248,16 +248,16 @@ main .gallery-image-grid figure figcaption {
   color: #fffcf7;
   background: rgba(0, 0, 0, 0.6);
   transition: 0.3s;
-  -ms-transform: translateY(100%);
-      transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 main .gallery-image-grid figure:hover figcaption {
-  -ms-transform: translateY(0);
-      transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 main .gallery-image-grid figure:hover img {
-  -ms-transform: scale(1.2);
-      transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 main .comments {
   margin: 3rem 0;
